@@ -1,0 +1,235 @@
+/* FONTS */
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/poppins-bold.woff2') format('woff2'), url('../fonts/poppins-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins-italic';
+    src: url('../fonts/poppins-italic.woff2') format('woff2'), url('../fonts/poppins-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('../fonts/poppins-regular.woff2') format('woff2'), url('../fonts/poppins-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'volkhov-bold';
+    src: url('../fonts/volkhov-bold.woff2') format('woff2'), url('../fonts/volkhov-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'volkhov-italic';
+    src: url('../fonts/volkhov-italic.woff2') format('woff2'), url('../fonts/volkhov-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'volkhov-regular';
+    src: url('../fonts/volkhov-regular.woff2') format('woff2'), url('../fonts/volkhov-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open-sans-regular';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/* GENERAL */
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+h1{
+    font: 84px 'volkhov-bold';
+    color: #ffffff;
+}
+
+button{
+    font: 700 16px arial, sans-serif;
+    color: #bfc0cd;
+}
+
+h2 {
+    font: 50px 'volkhov-regular';
+    color: #14183e;
+}
+
+li, a{
+    font-family: 'poppins-regular', sans-serif;
+}
+
+/* HEADER */
+header{
+    background-color: #bfe3e3;
+}
+
+
+
+
+/* SECTION BIENVENUE */
+#bienvenue{
+    background-color: #f6f1f1;
+}
+
+#bienvenue h3{
+    font: 400 20px 'poppins-bold';
+    color: #df6951;
+}
+
+#bienvenue p{
+    font: 500 16px/30px 'poppins-regular' ;
+    color: #bfc0cd;
+}
+
+
+
+
+/* SECTION NOUVEAU */
+#nouveau{
+    background-color: #eaffe0;
+}
+
+#nouveau h2{
+    font: 50px 'volkhov-bold';
+    color: #14183e;
+}
+
+#nouveau h3{
+    font: 600 16px 'poppins-regular';
+    color: #5e6282;
+}
+
+#plats p{
+    font: 500 18px 'poppins-regular';
+
+}
+
+#maki p:first-child{
+    font: 600 20px/28px open-sans-regular;
+}
+
+.card > p:nth-of-type(2) {
+    font: 500 16px/28px 'poppins-regular';
+}
+
+
+
+
+/* SECTION VOYAGE*/
+#voyage{
+    background-color: #fbeffd;
+}
+
+#voyage p{
+    font: 500 16px/30px 'poppins-regular' ;
+    color: #ffffff;
+}
+
+
+
+/* SECTION COMMANDE */
+#commande{
+    background-color: #bfe3c0;
+}
+
+#commande p:first-child{
+    font: 500 16px 'poppins-bold';
+    color: #22232c;
+
+}
+
+#commande a > p:nth-of-type(2){
+    font: 500 16px 'poppins-regular';
+    color: #3e3f43;
+}
+
+#commande h2{
+    font: 50px 'volkhov-bold';
+    color: #df6951;
+}
+
+#commande h2 span{
+    color: #14183e;
+}
+
+#commande h3{
+    font: 600 18px 'poppins-regular' ;
+    color: #5e6282;
+}
+
+
+
+
+
+/* SECTION CONTACT */
+#contact{
+    background-color: #e3dcbf;
+}
+
+#contact h2{
+    font: 50px 'volkhov-bold';
+    color: #14183e;
+}
+#contact h3{
+    font: 600 18px 'poppins-regular';
+    color: #5e6282;
+}
+
+#contact h4{
+    font: 600 18px 'poppins-regular';
+}
+
+#contact p{
+    font:500 14px/20px 'poppins-regular';
+    color: #8d8d8d;
+}
+
+#contact label{
+    font: 500 15px 'poppins-regular';
+
+}
+
+input::placeholder {
+    font:500 13px 'poppins-regular';
+    color: #989898;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #e5cff3;
+}
+
+footer h4{
+    font: 500 21px/31px 'poppins-bold';
+}
+
+footer p,a {
+    font: 500 18px/26px 'poppins-regular';
+    color: #5e6282;
+}
+
+footer > p:nth-of-type(3){
+    font: 500 14px/21px 'poppins-regular';
+    color: #5e6282;
+}
