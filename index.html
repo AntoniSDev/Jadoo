@@ -16,7 +16,9 @@
 
 
 <header>
-    <img src="" alt="Logo Jadoo">
+    <div class="logo">
+        <img src="" alt="Logo Jadoo">
+    </div>
     <nav>
         <ul>
             <li>
@@ -40,11 +42,13 @@
 
 
 <section id="bienvenue">
-    <h3>UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</h3>
-    <h1>Bienvenue <br> au restaurant <br> Jadoo</h1>
-    <p>Jadoo vous accueille dans son ambiance zen et épurée, idéale pour découvrir ou redécouvrir la cuisine
-        gastronomique du Chef Junichi IIDA.</p>
-    <button class="orange">Découvrir la carte</button>
+    <article>
+        <h3>UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</h3>
+        <h1>Bienvenue <br> au restaurant <br> Jadoo</h1>
+        <p>Jadoo vous accueille dans son ambiance zen et épurée, idéale pour découvrir ou redécouvrir la cuisine
+            gastronomique du Chef Junichi IIDA.</p>
+        <button class="orange">Découvrir la carte</button>
+    </article>
 </section>
 
 
@@ -53,22 +57,65 @@
 
 
 <section id="nouveau">
-    <h3>Découvrez</h3>
-    <h2>Les nouveautés Jadoo</h2>
-    <div id="plats" >
-        <div class="card"><p>Boulettes de poulet au gingembre sauce sucrée salée "Tsukuné"</p></div>
-        <div class="card"><p>Nouilles japonaises chaudes à base de farine de blé "Udon"</p></div>
-        <div class="card"><p>Échine de porc panée à la japonaise "Tonkatsu-Teishoku"</p></div>
+    <div id="titrenouveau">
+        <h3>Découvrez</h3>
+        <h2>Les nouveautés Jadoo</h2>
     </div>
-    <div id="maki">
-        <div class="card"><p>California Tobiko</p><br><p>Saumon, thon, mayonnaise</p></div>
-        <div class="card"><p>California Rolls</p><br><p>Saumon, avocat et mayonnaise</p></div>
-        <div class="card"><p>Ebi</p><br><p>Crevette, avocat, menthe, coriandre</p></div>
-        <div class="card"><p>Ikura Rolls</p><br><p>Oeufs de saumon</p></div>
+    <div id="newcards">
+        <div id="descriptions">
+            <article class="cards">
+                <figure>
+                    <img src="" alt="Boulettes de poulet">
+                    <figcaption>Boulettes de poulet au gingembre sauce sucrée salée "Tsukuné"</figcaption>
+                </figure>
+            </article>
+            <article class="cards">
+                <figure>
+                    <img src="" alt="Nouilles japonaises">
+                    <figcaption>Nouilles japonaises chaudes à base de farine de blé "Udon"</figcaption>
+                </figure>
+            </article>
+            <article class="cards">
+                <figure>
+                    <img src="" alt="Échine de porc panée">
+                    <figcaption>Échine de porc panée à la japonaise "Tonkatsu-Teishoku"</figcaption>
+                </figure>
+            </article>
+        </div>
     </div>
+    <div id="makicards">
+        <div id=descriptions2">
+            <article class="cards">
+                <figure>
+                    <img src="" alt="California Tobiko">
+                    <figcaption>California Tobiko<br><span>Saumon, thon, mayonnaise</span></figcaption>
+                </figure>
+            </article>
+            <article class="cards">
+                <figure>
+                    <img src="" alt="California Rolls">
+                    <figcaption>California Rolls<br><span>Saumon, avocat et mayonnaise</span></figcaption>
+                </figure>
+            </article>
+            <article class="cards">
+                <figure>
+                    <img src="" alt="Ebi">
+                    <figcaption>Ebi<br><span>Saumon, thon, mayonnaise</span></figcaption>
+                </figure>
+            </article>
+            <article class="cards">
+                <figure>
+                    <img src="" alt="Ikura Rolls">
+                    <figcaption>Ikura Rolls<br><span>Oeufs de saumon</span></figcaption>
+                </figure>
+            </article>
+        </div>
+    </div>
+
+
+
+
     <button class="orange">Découvrir la carte</button>
-
-
 </section>
 
 
@@ -76,11 +123,16 @@
 
 
 <section id="voyage">
-    <!-- Lien vidéo ? bouton intérieur ?-->
-    <h1>Un voyage <br> gastronomique <br> entre le Japon <br> et la France...</h1>
-    <p>Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans
-        l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de
-        saveurs chaque jour au sein de son restaurant gastronomique.</p>
+    <div class="video"><img src="" alt=""></div>
+    <article><h1>Un voyage <br> gastronomique <br> entre le Japon <br> et la France...</h1>
+        <p>Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans
+            l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de
+            saveurs chaque jour au sein de son restaurant gastronomique.</p>
+    </article>
+    <div class="imgdecal">
+        <img src="" alt="image gauche">
+        <img src="" alt="image droite">
+    </div>
 </section>
 
 
@@ -88,13 +140,17 @@
 
 
 <section id="commande">
-
-    <h3>RAPIDE ET PRATIQUE</h3>
-    <h2>Commandez <span>sur le site Jadoo</span></h2>
-    <a href=""><p>UberEats</p><br><p> Commandez tous vos plats depuis UberEats</p></a>
-    <a href=""><p>Jadoo.fr</p><br><p>  Ou commandez en ligne sur le site officiel de Jadoo</p></a>
-    <a href=""><p>Livraison ultra rapide</p><br><p>  Soyez livré en 20 minutes maximum</p></a>
-    <button class="orange">Découvrir la carte</button>
+    <article>
+        <h3>RAPIDE ET PRATIQUE</h3>
+        <h2>Commandez <span>sur le site Jadoo</span></h2>
+        <a href=""><p>UberEats</p><br>
+            <p> Commandez tous vos plats depuis UberEats</p></a>
+        <a href=""><p>Jadoo.fr</p><br>
+            <p> Ou commandez en ligne sur le site officiel de Jadoo</p></a>
+        <a href=""><p>Livraison ultra rapide</p><br>
+            <p> Soyez livré en 20 minutes maximum</p></a>
+        <button class="orange">Découvrir la carte</button>
+    </article>
 </section>
 
 
@@ -103,7 +159,7 @@
 <section id="contact">
     <h3>PRENDRE RENDEZ-VOUS</h3>
     <h2>Contactez-nous<br>pour réserver au restaurant</h2>
-    <div class="contactez-nous">
+    <div id="contactez-nous">
         <form action="/#" method="post">
             <h4>Formulaire de contact</h4>
             <p>Remplissez le formulaire ci-dessous
@@ -120,9 +176,7 @@
                 <label for="email">Votre e-mail</label>
                 <input type="email" id="email" name="email" placeholder="monAdresse@gmail.com" required>
             </div>
-            <div>
 
-            </div>
             <div>
                 <label for="message">Message</label>
                 <input name="message" id="message" type="text" placeholder="Votre message/demande de réservation"
@@ -140,24 +194,29 @@
 
 
 <footer>
-    <img src="" alt="Logo Jadoo">
-    <p>Un voyage gastronomique entre le Japon et la France</p>
-    <h4>Restaurant</h4>
-    <ul>
-        <li><a href="#">Nouveautés</a></li>
-        <li><a href="#">Découvrir</a></li>
-        <li><a href="#">Commander</a></li>
-    </ul>
-
-    <h4>Contact</h4>
-    <ul>
-        <li><a href="#">    Prendre RDV</a></li>
-    </ul>
-    <img src="" alt="Logo UberEats">
-    <p>Téléchargez UberEats</p>
-    <button>GOOGLE PLAY</button>
-    <button>APPLE STORE</button>
-    <p>Tous droits réservés @jadoo.com</p>
+    <div id="foot">
+        <div id="foot1"><img src="" alt="Logo Jadoo">
+            <p>Un voyage gastronomique entre le Japon et la France</p>
+        </div>
+        <div id="foot2">
+            <h4>Restaurant</h4>
+            <ul>
+                <li><a href="#">Nouveautés</a></li>
+                <li><a href="#">Découvrir</a></li>
+                <li><a href="#">Commander</a></li>
+            </ul>
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="#"> Prendre RDV</a></li>
+            </ul>
+        </div>
+        <div id="foot3"><img src="" alt="Logo UberEats">
+            <p>Téléchargez UberEats</p>
+            <button>GOOGLE PLAY</button>
+            <button>APPLE STORE</button>
+        </div>
+        <p>Tous droits réservés @jadoo.com</p>
+    </div>
 </footer>
 
 

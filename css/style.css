@@ -66,18 +66,29 @@ header{
     color: #5e6282;
 }
 
-#plats p{
-    font: 500 18px 'poppins-regular';
-
+#newcards figcaption{
+    font: 500 18px/28px 'poppins-regular';
+    color:#5e6282
 }
 
-#maki p:first-child{
-    font: 600 20px/28px open-sans-regular;
+#makicards figcaption{
+   font: 600 20px/28px 'open-sans-regular';
 }
 
-.card > p:nth-of-type(2) {
+#makicards figcaption span{
     font: 500 16px/28px 'poppins-regular';
+    color: #5e6282;
 }
+
+
+
+/*#maki p:first-child{*/
+/*    font: 600 20px/28px open-sans-regular;*/
+/*}*/
+
+/*.card > p:nth-of-type(2) {*/
+/*    font: 500 16px/28px 'poppins-regular';*/
+/*}*/
 
 
 
@@ -156,8 +167,8 @@ header{
 
 }
 
-input::placeholder {
-    font:500 13px 'poppins-regular';
+input {
+    font: 500 13px 'poppins-regular';
     color: #989898;
 }
 
