@@ -192,6 +192,9 @@ header ul li a {
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/decoration_filet.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
 }
 
 #descriptions{
@@ -199,17 +202,14 @@ header ul li a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-}
-
-#descriptions{
     border-radius: 30px;
 }
+
 #descriptions .cards{
     width: 280px;
     text-align: center;
     box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.5);
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+    border-radius: 24px;
 }
 
 #descriptions figcaption{
@@ -270,7 +270,8 @@ header ul li a {
 
 /* SECTION VOYAGE*/
 #voyage{
-    background-color: #cc61de;
+    background-image: url(/img/illustration_chef.jpg);
+    background-size: cover;
 }
 
 #voyage p{
