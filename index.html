@@ -17,12 +17,13 @@
 
 <header>
     <div class="logo">
-        <img src="" alt="Logo Jadoo">
+        <img src="./img/logo_jadoo_1.svg" alt="Logo Jadoo">
+        <img src="./img/logo_jadoo_2.svg" alt="Logo Jadoo">
     </div>
     <nav>
         <ul>
             <li>
-                <a href="">Les nouveautés</a>
+                <a href="#nouveau">Les nouveautés</a>
             </li>
             <li>
                 <a href="">Découvrir</a>
@@ -42,7 +43,7 @@
 
 
 <section id="bienvenue">
-    <article>
+    <article class="souligne">
         <h3>UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</h3>
         <h1>Bienvenue <br> au restaurant <br> Jadoo</h1>
         <p>Jadoo vous accueille dans son ambiance zen et épurée, idéale pour découvrir ou redécouvrir la cuisine
@@ -50,7 +51,6 @@
         <button class="orange">Découvrir la carte</button>
     </article>
 </section>
-
 
 
 
@@ -65,47 +65,47 @@
         <div id="descriptions">
             <article class="cards">
                 <figure>
-                    <img src="" alt="Boulettes de poulet">
+                    <img src="./img/plat_1.png" alt="Boulettes de poulet">
                     <figcaption>Boulettes de poulet au gingembre sauce sucrée salée "Tsukuné"</figcaption>
                 </figure>
             </article>
             <article class="cards">
                 <figure>
-                    <img src="" alt="Nouilles japonaises">
+                    <img src="./img/plat_2.png" alt="Nouilles japonaises">
                     <figcaption>Nouilles japonaises chaudes à base de farine de blé "Udon"</figcaption>
                 </figure>
             </article>
             <article class="cards">
                 <figure>
-                    <img src="" alt="Échine de porc panée">
+                    <img src="./img/plat_3.png" alt="Échine de porc panée">
                     <figcaption>Échine de porc panée à la japonaise "Tonkatsu-Teishoku"</figcaption>
                 </figure>
             </article>
         </div>
     </div>
     <div id="makicards">
-        <div id=descriptions2">
+        <div id="descriptions2">
             <article class="cards">
                 <figure>
-                    <img src="" alt="California Tobiko">
+                    <img src="./img/maki_1.png" alt="California Tobiko">
                     <figcaption>California Tobiko<br><span>Saumon, thon, mayonnaise</span></figcaption>
                 </figure>
             </article>
             <article class="cards">
                 <figure>
-                    <img src="" alt="California Rolls">
+                    <img src="./img/maki_2.png" alt="California Rolls">
                     <figcaption>California Rolls<br><span>Saumon, avocat et mayonnaise</span></figcaption>
                 </figure>
             </article>
             <article class="cards">
                 <figure>
-                    <img src="" alt="Ebi">
-                    <figcaption>Ebi<br><span>Saumon, thon, mayonnaise</span></figcaption>
+                    <img src="./img/maki_3.png" alt="Ebi">
+                    <figcaption>Ebi<br><span>Crevette, avocat, menthe, coriandre</span></figcaption>
                 </figure>
             </article>
             <article class="cards">
                 <figure>
-                    <img src="" alt="Ikura Rolls">
+                    <img src="./img/maki_4.png" alt="Ikura Rolls">
                     <figcaption>Ikura Rolls<br><span>Oeufs de saumon</span></figcaption>
                 </figure>
             </article>
@@ -156,37 +156,43 @@
 
 
 
+
 <section id="contact">
     <h3>PRENDRE RENDEZ-VOUS</h3>
     <h2>Contactez-nous<br>pour réserver au restaurant</h2>
     <div id="contactez-nous">
-        <form action="/#" method="post">
-            <h4>Formulaire de contact</h4>
-            <p>Remplissez le formulaire ci-dessous
-                pour nous contacter</p>
-            <div>
-                <label for="nom">Votre Nom</label>
-                <input type="text" id="nom" name="nom" placeholder="Nom" required>
-            </div>
-            <div>
-                <label for="prenom">Votre Prénom</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
-            </div>
-            <div>
-                <label for="email">Votre e-mail</label>
-                <input type="email" id="email" name="email" placeholder="monAdresse@gmail.com" required>
-            </div>
+        <div id="contactleft">
+            <form action="/#" method="post">
+                <h4>Formulaire de contact</h4>
+                <p>Remplissez le formulaire ci-dessous
+                    pour nous contacter</p>
+                <div>
+                    <label for="nom">Votre Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                </div>
+                <div>
+                    <label for="prenom">Votre Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                </div>
+                <div>
+                    <label for="email">Votre e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="monAdresse@gmail.com" required>
+                </div>
 
-            <div>
-                <label for="message">Message</label>
-                <input name="message" id="message" type="text" placeholder="Votre message/demande de réservation"
-                       required>
-            </div>
-            <div>
-                <button id="submit" type="submit">Envoyer</button>
-            </div>
-        </form>
+                <div>
+                    <label for="message">Message</label>
+                    <input name="message" id="message" type="text" placeholder="Votre message/demande de réservation"
+                           required>
+                </div>
+                <div>
+                    <button id="submit" type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+        <div id="imgform">
+        </div>
     </div>
+
 </section>
 
 
@@ -195,7 +201,9 @@
 
 <footer>
     <div id="foot">
-        <div id="foot1"><img src="" alt="Logo Jadoo">
+        <div id="foot1">
+            <img src="./img/logo_jadoo_1.svg" alt="Logo Jadoo">
+            <img src="./img/logo_jadoo_2.svg" alt="Logo Jadoo">
             <p>Un voyage gastronomique entre le Japon et la France</p>
         </div>
         <div id="foot2">
@@ -218,6 +226,10 @@
         <p>Tous droits réservés @jadoo.com</p>
     </div>
 </footer>
+
+
+
+
 
 
 

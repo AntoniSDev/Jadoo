@@ -4,6 +4,9 @@
 *{
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -25,20 +28,121 @@ li, a{
     font-family: 'poppins-regular', sans-serif;
 }
 
-/* HEADER */
-header{
-    background-color: #5bd7d7;
+.logo img:first-child{
+    margin-right: 20px;
 }
+
+.orange {
+    font: 18px Arial;
+    color: white;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: #DC9804 ;
+}
+
+
+
+/* ANIMATION LOGO JADOO */
+.logo:hover img:first-child {
+    animation: tilt-shaking 0.5s ease-in;
+}
+@keyframes tilt-shaking {
+    20% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* HEADER */
+
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    display: flex;
+}
+
+header nav {
+    margin-right: 8%;
+    height: 100%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    height: 100%;
+}
+
+
+header ul li {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+header ul li a {
+    font: 500 17px Arial;
+    color: black;
+}
+
+.logo{
+    display: flex;
+    height: 30px;
+    width: 1rem;
+    margin-left: 8%;
+    margin-right: auto;
+}
+
+.souligne{
+    background-image: url("/img/souligne_rose.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 10%;
+    background-position-y: 70%;
+}
+
 
 
 
 
 /* SECTION BIENVENUE */
 #bienvenue{
-    background-color: #ec9090;
+    background-image: url(/img/illustration_principale.jpg);
+    background-size: cover;
+    height: 780px;
+}
+
+#bienvenue article{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#bienvenue h1{
+    margin-top: 35px;
+    margin-left: 120px;
 }
 
 #bienvenue h3{
+    margin-top: 120px;
+    margin-left: 120px;
     font: 400 20px 'poppins-bold';
     color: #df6951;
 }
@@ -46,50 +150,121 @@ header{
 #bienvenue p{
     font: 500 16px/30px 'poppins-regular' ;
     color: #bfc0cd;
+    margin-top: 30px;
+    margin-left: 120px;
+    width: 450px;
+}
+
+#bienvenue .orange{
+    margin-left: 120px;
+    margin-top: 10px;
 }
 
 
-
-
 /* SECTION NOUVEAU */
-#nouveau{
-    background-color: #96e86f;
+
+#nouveau {
+    text-align: center;
+    background-image: url("/img/decor_1.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 5%;
 }
 
 #nouveau h2{
     font: 50px 'volkhov-bold';
     color: #14183e;
+    padding-top: 15px;
 }
 
 #nouveau h3{
-    font: 600 16px 'poppins-regular';
+    padding-top: 125px;
+    font: 600 18px 'poppins-regular';
     color: #5e6282;
 }
 
-#newcards figcaption{
+#nouveau .orange{
+    margin: 130px auto 90px;
+}
+#newcards{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#descriptions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+#descriptions{
+    border-radius: 30px;
+}
+#descriptions .cards{
+    width: 280px;
+    text-align: center;
+    box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+#descriptions figcaption{
     font: 500 18px/28px 'poppins-regular';
-    color:#5e6282
+    color:#5e6282;
+    text-align: center;
+    padding: 20px;
+}
+
+#descriptions img{
+    max-width: 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+
+
+#makicards{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#makicards .cards{
+    width: 180px;
+    text-align: center;
 }
 
 #makicards figcaption{
-   font: 600 20px/28px 'open-sans-regular';
+    font: 600 20px/28px 'open-sans-regular';
+    padding: 30px;
+    color: #1e1d4c;
 }
 
 #makicards figcaption span{
+    display: block;
     font: 500 16px/28px 'poppins-regular';
     color: #5e6282;
+    padding-top: 20px;
 }
 
+#descriptions2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
 
-
-/*#maki p:first-child{*/
-/*    font: 600 20px/28px open-sans-regular;*/
-/*}*/
-
-/*.card > p:nth-of-type(2) {*/
-/*    font: 500 16px/28px 'poppins-regular';*/
-/*}*/
-
+#descriptions2 .cards{
+    width: 235px;
+    text-align: center;
+}
 
 
 
@@ -102,6 +277,8 @@ header{
     font: 500 16px/30px 'poppins-regular' ;
     color: #ffffff;
 }
+
+
 
 
 
@@ -142,6 +319,7 @@ header{
 /* SECTION CONTACT */
 #contact{
     background-color: #e0c65c;
+    text-align: center;
 }
 
 #contact h2{
@@ -172,6 +350,23 @@ input {
     color: #989898;
 }
 
+#contactez-nous{
+    display: inline-block;
+}
+#imgform {
+    background: url(/img/illustration_formulaire.jpg) no-repeat;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    float: right;
+    border-radius: 20px;
+}
+
+#contactleft {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
 
 
 
