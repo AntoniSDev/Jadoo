@@ -42,10 +42,12 @@ li, a{
     background-color: #DC9804 ;
 }
 
-
+#descriptions > article,#contactez-nous{
+    box-shadow: 1px 2px 15px 2px rgba(0, 0, 0, 0.5);
+}
 
 /* ANIMATION LOGO JADOO */
-.logo:hover img:first-child {
+.logo:hover img:first-child,#lienscontact a:nth-child(2) img:hover,#foot1 img:nth-of-type(2) {
     animation: tilt-shaking 0.5s ease-in;
 }
 @keyframes tilt-shaking {
@@ -77,6 +79,7 @@ header{
     top: 0;
     padding: 20px 0;
     display: flex;
+    z-index: 5;
 }
 
 header nav {
@@ -208,7 +211,6 @@ header ul li a {
 #descriptions .cards{
     width: 280px;
     text-align: center;
-    box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.5);
     border-radius: 24px;
 }
 
@@ -272,6 +274,7 @@ header ul li a {
 #voyage{
     background-image: url(/img/illustration_chef.jpg);
     background-size: cover;
+    position: relative;
 }
 
 #voyage p{
@@ -279,22 +282,89 @@ header ul li a {
     color: #ffffff;
 }
 
+#conteneurvideo {
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+    top: 5%;
+    left: 7%;
+}
+
+#conteneurvideo > img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+#conteneurvideo #buttonPlay{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#voyage article{
+    display: flex;
+    flex-direction: column;
+}
+
+#voyage article h1{
+    display: flex;
+    padding-top: 300px;
+    margin-left: 120px;
+}
+
+#voyage p{
+    margin-left: 120px;
+    padding-top: 50px;
+    margin-bottom: 500px;
+    max-width: 500px;
+}
+
+
+#imgdecal {
+    position: absolute;
+    bottom: -400px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* SECTION COMMANDE */
 #commande{
-    background-color: #64ec68;
+    background-image: url(/img/illustration_commander.jpg);
+    background-size: cover;
+    height: 1150px;
 }
+
+#commande article{
+    margin-left: 120px;
+}
+
+
 
 #commande p:first-child{
     font: 500 16px 'poppins-bold';
     color: #22232c;
-
 }
 
-#commande a > p:nth-of-type(2){
+#commande p:nth-of-type(2){
     font: 500 16px 'poppins-regular';
     color: #3e3f43;
 }
@@ -302,34 +372,75 @@ header ul li a {
 #commande h2{
     font: 50px 'volkhov-bold';
     color: #df6951;
+    padding-bottom: 40px;
 }
 
 #commande h2 span{
     color: #14183e;
 }
 
+#commande a{
+    display: flex;
+    width: 400px;
+}
+
+#commande img{
+    height: 60px;
+    margin-right: 20px;
+}
+
 #commande h3{
     font: 600 18px 'poppins-regular' ;
     color: #5e6282;
+    padding-top: 500px;
+    padding-bottom: 20px;
 }
 
+#lienscontact{
+    display: flex;
+    flex-direction: column;
+}
 
+#lienscontact figure {
+    display: flex;
+    padding-bottom: 40px;
+    width:400px;
+}
 
+#lienscontact figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#lienscontact > figure > figcaption > p:nth-child(1){
+    padding-top: 15px;
+}
 
 
 /* SECTION CONTACT */
+
+
 #contact{
-    background-color: #e0c65c;
-    text-align: center;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contact h2{
+    text-align: center;
     font: 50px 'volkhov-bold';
     color: #14183e;
+    padding-top: 35px;
+    padding-bottom: 60px;
+
 }
 #contact h3{
+    padding-top: 125px;
     font: 600 18px 'poppins-regular';
     color: #5e6282;
+    text-align: center;
 }
 
 #contact h4{
@@ -338,36 +449,48 @@ header ul li a {
 
 #contact p{
     font:500 14px/20px 'poppins-regular';
+    padding-top: 20px;
+    width: 300px;
     color: #8d8d8d;
 }
 
 #contact label{
     font: 500 15px 'poppins-regular';
-
 }
+
 
 input {
     font: 500 13px 'poppins-regular';
     color: #989898;
 }
 
-#contactez-nous{
-    display: inline-block;
-}
-#imgform {
-    background: url(/img/illustration_formulaire.jpg) no-repeat;
-    width: 400px;
-    height: 400px;
-    background-size: cover;
-    float: right;
-    border-radius: 20px;
+#nomprenom{
+    display: flex;
+    flex-direction: row;
 }
 
-#contactleft {
-    width: 400px;
-    height: 400px;
-    float: left;
+#contactez-nous{
+    display: flex;
+    border-radius: 30px;
+    height: 560px;
 }
+
+#contactleft{
+    width: 510px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px 0 0 30px;
+    padding-left: 50px;
+    padding-top: 75px;
+}
+
+#imgform img{
+    border-radius: 0 30px 30px 0;
+    width: 510px;
+    height: 560px;
+}
+
 
 
 

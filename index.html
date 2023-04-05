@@ -123,15 +123,20 @@
 
 
 <section id="voyage">
-    <div class="video"><img src="/img/visu_video.jpg" alt=""></div>
+    <div id="conteneurvideo">
+            <img src="/img/visu_video.jpg" alt="Miniature Video">
+        <div id="buttonPlay">
+            <img src="/img/button_play.svg" alt="bouton Play">
+        </div>
+    </div>
     <article><h1>Un voyage <br> gastronomique <br> entre le Japon <br> et la France...</h1>
         <p>Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans
             l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de
             saveurs chaque jour au sein de son restaurant gastronomique.</p>
     </article>
-    <div class="imgdecal">
-        <img src="" alt="image gauche">
-        <img src="" alt="image droite">
+    <div id="imgdecal">
+        <img src="/img/wrapper_illustration_1.jpg" alt="image gauche">
+        <img src="/img/wrapper_illustration_2.jpg" alt="image droite">
     </div>
 </section>
 
@@ -142,16 +147,40 @@
 <section id="commande">
     <article>
         <h3>RAPIDE ET PRATIQUE</h3>
-        <h2>Commandez <span>sur le site Jadoo</span></h2>
-        <a href=""><p>UberEats</p><br>
-            <p> Commandez tous vos plats depuis UberEats</p></a>
-        <a href=""><p>Jadoo.fr</p><br>
-            <p> Ou commandez en ligne sur le site officiel de Jadoo</p></a>
-        <a href=""><p>Livraison ultra rapide</p><br>
-            <p> Soyez livré en 20 minutes maximum</p></a>
+        <h2>Commandez<br> <span>sur le site Jadoo</span></h2>
+
+        <div id="lienscontact">
+            <a href="">
+                <figure>
+                    <img src="/img/logo_uberEats.png" alt="UberEats">
+                    <figcaption>
+                        <p>UberEats</p>
+                        <p>Commandez tous vos plats depuis UberEats</p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="">
+                <figure>
+                    <img src="/img/logo_jadoo_1.svg" alt="Jadoo">
+                    <figcaption>
+                        <p>Jadoo.fr</p>
+                        <p>Ou commandez en ligne sur le site officiel de Jadoo</p>
+                    </figcaption>
+                </figure>
+            </a>
+            <figure>
+                <img src="/img/logo_transport.png" alt="Livraison">
+                <figcaption>
+                    <p>Livraison ultra rapide</p>
+                    <p>Soyez livré en 20 minutes maximum</p>
+                </figcaption>
+            </figure>
+        </div>
         <button class="orange">Découvrir la carte</button>
+
     </article>
 </section>
+
 
 
 
@@ -166,13 +195,15 @@
                 <h4>Formulaire de contact</h4>
                 <p>Remplissez le formulaire ci-dessous
                     pour nous contacter</p>
-                <div>
-                    <label for="nom">Votre Nom</label>
-                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
-                </div>
-                <div>
-                    <label for="prenom">Votre Prénom</label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                <div id="nomprenom">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </div>
+                    <div>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                    </div>
                 </div>
                 <div>
                     <label for="email">Votre e-mail</label>
@@ -189,7 +220,7 @@
                 </div>
             </form>
         </div>
-        <div id="imgform">
+        <div id="imgform"><img src="/img/illustration_formulaire.jpg" alt="">
         </div>
     </div>
 
@@ -199,33 +230,33 @@
 
 
 
-<footer>
-    <div id="foot">
-        <div id="foot1">
-            <img src="./img/logo_jadoo_1.svg" alt="Logo Jadoo">
-            <img src="./img/logo_jadoo_2.svg" alt="Logo Jadoo">
-            <p>Un voyage gastronomique entre le Japon et la France</p>
-        </div>
-        <div id="foot2">
-            <h4>Restaurant</h4>
-            <ul>
-                <li><a href="#">Nouveautés</a></li>
-                <li><a href="#">Découvrir</a></li>
-                <li><a href="#">Commander</a></li>
-            </ul>
-            <h4>Contact</h4>
-            <ul>
-                <li><a href="#"> Prendre RDV</a></li>
-            </ul>
-        </div>
-        <div id="foot3"><img src="" alt="Logo UberEats">
-            <p>Téléchargez UberEats</p>
-            <button>GOOGLE PLAY</button>
-            <button>APPLE STORE</button>
-        </div>
-        <p>Tous droits réservés @jadoo.com</p>
-    </div>
-</footer>
+<!--<footer>-->
+<!--    <div id="foot">-->
+<!--        <div id="foot1">-->
+<!--            <img src="./img/logo_jadoo_1.svg" alt="Logo Jadoo">-->
+<!--            <img src="./img/logo_jadoo_2.svg" alt="Logo Jadoo">-->
+<!--            <p>Un voyage gastronomique entre le Japon et la France</p>-->
+<!--        </div>-->
+<!--        <div id="foot2">-->
+<!--            <h4>Restaurant</h4>-->
+<!--            <ul>-->
+<!--                <li><a href="#">Nouveautés</a></li>-->
+<!--                <li><a href="#">Découvrir</a></li>-->
+<!--                <li><a href="#">Commander</a></li>-->
+<!--            </ul>-->
+<!--            <h4>Contact</h4>-->
+<!--            <ul>-->
+<!--                <li><a href="#"> Prendre RDV</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div id="foot3"><img src="" alt="Logo UberEats">-->
+<!--            <p>Téléchargez UberEats</p>-->
+<!--            <button>GOOGLE PLAY</button>-->
+<!--            <button>APPLE STORE</button>-->
+<!--        </div>-->
+<!--        <p>Tous droits réservés @jadoo.com</p>-->
+<!--    </div>-->
+<!--</footer>-->
 
 
 
