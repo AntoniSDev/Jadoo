@@ -268,27 +268,48 @@ header ul li a {
     position: relative;
 }
 
-#descriptions2 > article:nth-child(4) > figure > figcaption > span{
-    padding-bottom: 28px;
-}
+/*#descriptions2 > article:nth-child(4) > figure > figcaption > span{*/
+/*    padding-bottom: 28px;*/
+/*}*/
+
 #descriptions2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: relative;
 }
 
 
-#descriptions2 article{
+#descriptions2 .cards{
     border-radius: 20px;
     position: relative;
 }
 
-#descriptions2 > article:hover {
+#descriptions2 .cards:not(:hover){
+    background-color: transparent;
+    transition: background-color 1s;
+}
+
+#descriptions2 > .cards:hover{
     box-shadow: 1px 2px 15px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+#descriptions2 > .cards:hover img:nth-child(2){
+    transform: rotate(0deg);
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
 }
 
 
+#descriptions2 .cards img:nth-child(2){
+    position: absolute;
+    bottom: -35px;
+    left: -35px;
+    opacity: 0;
+    transform: rotate(-90deg);
+    transition: opacity 0.5s, transform 0.5s;
+    z-index: -1;
+}
 
 
 
