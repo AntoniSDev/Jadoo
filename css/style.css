@@ -17,6 +17,13 @@ h1{
 button{
     font: 700 16px arial, sans-serif;
     color: #bfc0cd;
+    background-color: #f1a501;
+    box-shadow: 0px 20px 35px 5px rgba(241, 165, 1, 0.15);
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
 
 h2 {
@@ -40,6 +47,7 @@ li, a{
     height: 50px;
     border: none;
     background-color: #DC9804 ;
+
 }
 
 #descriptions > article,#contactez-nous{
@@ -119,7 +127,7 @@ header ul li a {
 }
 
 .souligne{
-    background-image: url("/img/souligne_rose.svg");
+    background-image: url("../img/souligne_rose.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: 10%;
@@ -132,7 +140,7 @@ header ul li a {
 
 /* SECTION BIENVENUE */
 #bienvenue{
-    background-image: url(/img/illustration_principale.jpg);
+    background-image: url(../img/illustration_principale.jpg);
     background-size: cover;
     height: 780px;
 }
@@ -173,7 +181,7 @@ header ul li a {
 
 #nouveau {
     text-align: center;
-    background-image: url("/img/decor_1.svg");
+    background-image: url("../img/decor_1.svg");
     background-repeat: no-repeat;
     background-position: 90% 5%;
 }
@@ -268,46 +276,45 @@ header ul li a {
     position: relative;
 }
 
-/*#descriptions2 > article:nth-child(4) > figure > figcaption > span{*/
-/*    padding-bottom: 28px;*/
-/*}*/
-
 #descriptions2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-
 #descriptions2 .cards{
     border-radius: 20px;
     position: relative;
 }
 
+/* Background transparent en :not(:hover) */
 #descriptions2 .cards:not(:hover){
     background-color: transparent;
-    transition: background-color 1s;
+    transition: background-color, box-shadow, 0.3s ease-in;
 }
 
+/* Background blanc + shadow en :hover */
 #descriptions2 > .cards:hover{
     box-shadow: 1px 2px 15px 2px rgba(0, 0, 0, 0.5);
     background-color: white;
 }
 
+/* Rotate des div rose en mode :hover + une opacity de 1 */
 #descriptions2 > .cards:hover img:nth-child(2){
     transform: rotate(0deg);
     opacity: 1;
-    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.3s , transform 0.8s;
+    transition-delay: 0.1s;
 }
 
-
+/* Position de base des div rose opacity 0 */
 #descriptions2 .cards img:nth-child(2){
     position: absolute;
     bottom: -35px;
     left: -35px;
     opacity: 0;
     transform: rotate(-90deg);
-    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s ease-in-out;
     z-index: -1;
 }
 
@@ -316,7 +323,7 @@ header ul li a {
 
 /* SECTION VOYAGE*/
 #voyage{
-    background-image: url(/img/illustration_chef.jpg);
+    background-image: url(../img/illustration_chef.jpg);
     background-size: cover;
     position: relative;
 }
@@ -392,7 +399,7 @@ header ul li a {
 
 /* SECTION COMMANDE */
 #commande{
-    background-image: url(/img/illustration_commander.jpg);
+    background-image: url(../img/illustration_commander.jpg);
     background-size: cover;
     height: 1150px;
 }
@@ -466,6 +473,7 @@ header ul li a {
 
 
 #contact{
+    margin: auto;
     height: 1030px;
     display: flex;
     flex-direction: column;
@@ -476,25 +484,28 @@ header ul li a {
     text-align: center;
     font: 50px 'volkhov-bold';
     color: #14183e;
-    padding-top: 35px;
+    padding-top: 25px;
     padding-bottom: 60px;
 
 }
 #contact h3{
+    padding-top: 80px;
     font: 600 18px 'poppins-regular';
     color: #5e6282;
     text-align: center;
 }
 
 #contact h4{
+    margin-top: 10px;
+    margin-bottom: 25px;
     font: 600 18px 'poppins-regular';
 }
 
 #contact p{
     font:500 14px/20px 'poppins-regular';
-
     width: 300px;
     color: #8d8d8d;
+    margin-bottom: 20px;
 }
 
 #contact label{
@@ -504,23 +515,23 @@ header ul li a {
 input {
     font: 500 13px 'poppins-regular';
     color: #989898;
-}
-
-input {
     border: none;
+    border-bottom: 1px solid rgb(226, 228, 229);
+    transition: transform 0.2s ease 0s;
     outline: none;
+    margin-top: 10px;
 }
 
+input:focus{
+    border-bottom-color: #007aff;
+    transform: scale(1);
+    padding-bottom: 10px;
+}
 
 form {
-    display: flex;
+    display: block;
 }
 
-
-#nomprenom{
-    display: flex;
-    flex-direction: row;
-}
 
 #contactez-nous{
     display: flex;
@@ -529,17 +540,71 @@ form {
 }
 
 #contactleft{
-    width: 510px;
+    width: 31.875rem;
     height: 560px;
     border-radius: 30px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#contactleft > form > div:nth-child(4), #contactleft > form > div:nth-child(5){
+    margin-bottom: 20px;
+}
+
+#email, #message{
+    width: 412px;
+}
+
+#contactleft form{
+    width: 31.875rem;
+    padding: 50px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nomprenom{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+#nomgauche, #prenomdroite{
+    width: 100%;
+}
+
+#nomgauche input, #prenomdroite input{
+    width: 190px;
+
+}
 
 #imgform img{
     border-radius: 0 30px 30px 0;
     width: 510px;
     height: 560px;
 }
+
+#submit {
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: #007aff;
+    box-shadow: 0px 20px 35px 5px rgba(11, 54, 59, 0.15);
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+}
+
 
 
 
@@ -639,6 +704,8 @@ footer > p{
      height: 40px;
      width: 128px;
      border: none;
+     box-shadow: none;
+
  }
 
 #foot3 button img{
