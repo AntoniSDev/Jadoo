@@ -1,5 +1,6 @@
 /* smartphone */
-@media all and (max-width: 656px) {
+@media all and (max-width: 656px)
+{
 
 
     /* Header */
@@ -59,7 +60,7 @@
     }
 
     #bienvenue article p{
-       width: 60vw;
+       width: 80vw;
        margin-left: 0;
     }
     #bienvenue article .orange{
@@ -103,8 +104,8 @@
         background-image: none;
     }
 
-
     #slideshow-container .cards{
+        height: 408px;
         width: 280px;
         text-align: center;
         border-radius: 24px;
@@ -147,6 +148,182 @@
         }
     }
 
+    #descriptions2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+    }
+
+    #descriptions2 > .cards:hover{
+        box-shadow: none;
+    }
+
+    #descriptions2 > .cards:hover img:nth-child(2){
+        display: none;
+    }
+
+    #descriptions2 .cards{
+        width: 80%;
+        height: 180px;
+        display: block;
+    }
+
+    #descriptions2 .cards figure{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #descriptions2 .cards figure figcaption{
+        text-align: left;
+    }
+
+    #nouveau .orange{
+        margin: 10px auto 50px;
+    }
+
+
+
+/* Section Voyage */
+
+    #voyage{
+        display: flex;
+        flex-direction: column;
+    }
+    #conteneurvideo {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: relative;
+    }
+
+
+    #voyage {
+        background: none;
+    }
+    #voyage article{
+        display: none;
+    }
+
+    .chef {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .chef img{
+        width: 100%;
+        height: 100%;
+    }
+    #imgdecal {
+        display: flex;
+        flex-direction: column;
+        position: inherit;
+        bottom: 0;
+    }
+
+
+/* Section Commande */
+    #commande{
+        height: 100%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #commande h3, #commande h2{
+        text-align: center;
+
+    }
+   #commande h3{
+       padding-top: 80px;
+
+   }
+    #commande article {
+        margin-left: 0;
+    }
+
+    #lienscontact figure p{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #commande article .orange {
+        display: block;
+        margin: 10px auto 50px;
+    }
+
+    /* Section Contact */
+
+    #contact {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact h3{
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    #contact h2{
+        font-size: 36px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #contact h2 span {
+        display: none;
+    }
+    #contact h5{
+        display: flex;
+        text-align: center;
+    }
+
+    #contactez-nous {
+        box-shadow: none;
+    }
+    #imgform{
+        display: none;
+    }
+    #contactleft form{
+        padding: 0 50px;
+    }
+    #contactleft, #contactez-nous {
+        height: auto;
+    }
+    #contactleft h4, #contactleft p{
+        display: none;
+    }
+
+
+    .nomprenom{
+        display: block;
+    }
+
+    #nomgauche {
+        margin-bottom: 20px;
+    }
+
+    #contactleft input{
+        width: 412px;
+    }
+
+    #submit {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    /* footer */
+
+    footer p{
+        display: none;
+    }
+
+    footer #foot1{
+        display: none;
+    }
 
 
 
@@ -155,6 +332,23 @@
 
 
 
+
+
+    /*footer #foot4{*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    width: 20%;*/
+    /*    margin-top: -20px;*/
+    /*}*/
+
+    /*footer #foot4 img:first-child{*/
+    /*    margin-right: 10px;*/
+    /*}*/
+
+    /*footer #foot4 img{*/
+    /*    height: 60px;*/
+    /*    padding-bottom: 10px;*/
+    /*}*/
 
 }
 
