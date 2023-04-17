@@ -22,7 +22,7 @@ button{
     font: 700 16px arial, sans-serif;
     color: #bfc0cd;
     background-color: #f1a501;
-    box-shadow: 0px 20px 35px 5px rgba(241, 165, 1, 0.15);
+    box-shadow: 0 20px 35px 5px rgba(241, 165, 1, 0.15);
 }
 
 button:hover{
@@ -209,9 +209,7 @@ header ul li a {
     margin: 130px auto 90px;
 }
 
-#slideshow-container {
-    display: none;
-}
+
 #newcards{
     padding-top: 50px;
     display: flex;
@@ -355,7 +353,7 @@ header ul li a {
 }
 
 #conteneurvideo > img{
-    max-width: 100%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -394,6 +392,8 @@ header ul li a {
 #imgdecal {
     position: absolute;
     bottom: -400px;
+    display: flex;
+
 }
 
 
@@ -466,7 +466,7 @@ header ul li a {
 #lienscontact figure {
     display: flex;
     padding-bottom: 40px;
-    width:400px;
+    width:100%;
 }
 
 #lienscontact figure figcaption {
@@ -485,7 +485,7 @@ header ul li a {
 
 #contact{
     margin: auto;
-    height: 1030px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,7 +497,10 @@ header ul li a {
     color: #14183e;
     padding-top: 25px;
     padding-bottom: 60px;
+}
 
+form div{
+    width: 100%;
 }
 #contact h5{
     display: none;
@@ -517,7 +520,7 @@ header ul li a {
 
 #contact p{
     font:500 14px/20px 'poppins-regular';
-    width: 300px;
+    width: 100%;
     color: #8d8d8d;
     margin-bottom: 20px;
 }
@@ -554,12 +557,12 @@ form {
 }
 
 #contactleft{
-    width: 31.875rem;
     height: 560px;
     border-radius: 30px 0 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
 }
 
 #contactleft > form > div:nth-child(4), #contactleft > form > div:nth-child(5){
@@ -567,17 +570,17 @@ form {
 }
 
 #email, #message{
-    width: 412px;
+    width: 100%;
 }
 
 #contactleft form{
-    width: 31.875rem;
-    padding: 50px;
+    margin: 50px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    display: flex;
+
     flex-direction: column;
     align-items: flex-start;
+    max-width: 100%;
 }
 
 .nomprenom{
@@ -610,7 +613,7 @@ form {
     cursor: pointer;
     transition: transform 0.2s;
     background-color: #007aff;
-    box-shadow: 0px 20px 35px 5px rgba(11, 54, 59, 0.15);
+    box-shadow: 0 20px 35px 5px rgba(11, 54, 59, 0.15);
     margin-top: 50px;
     border-radius: 4px;
 }

@@ -2,7 +2,9 @@
 @media all and (max-width: 656px)
 {
 
-
+    .logo2 {
+        display: flex;
+    }
     /* Header */
     header {
         width: 100%;
@@ -91,61 +93,74 @@
         padding-top: 0.5vh;
     }
     #newcards {
-        display: none;
+        background: none;
     }
 
-    #slideshow-container{
-        padding-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+    #descriptions {
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+    /* ANIMATIONS CARDS NOUVEAU
+
+    propriétés associées dans l'ordre:
+    -animation-duration  10s
+    -animation-timing-function  ease
+    -animation-delay  0
+    -animation-iteration-count   infinite
+    -animation-direction    normal
+    -animation-fill-mode    none
+    -animation-play-state  runing
+
+    100%  3 items   100/3  33% par item
+    1.5% d'arrivée, 30% visible immobile ,1.5% de départ
+
+    */
+    #newcards {
         background-image: none;
     }
-
-    #slideshow-container .cards{
-        height: 408px;
-        width: 280px;
-        text-align: center;
-        border-radius: 24px;
-        box-shadow: 1px 2px 15px 2px rgba(0, 0, 0, 0.5);
+    #newcards .cards:nth-child(1){
+        animation: 20s ease 0s infinite normal none running animation-carte-1;
     }
 
-    #slideshow-container figcaption{
-        font: 500 18px/28px 'poppins-regular';
-        color:#5e6282;
-        text-align: center;
-        padding: 20px;
+    #newcards .cards:nth-child(2){
+        animation: 20s ease 0s infinite normal none running animation-carte-2;
     }
 
-    #slideshow-container img{
-        max-width: 100%;
-        border-top-left-radius: 24px;
-        border-top-right-radius: 24px;
+    #newcards .cards:nth-child(3){
+        animation: 20s ease 0s infinite normal none running animation-carte-3;
     }
 
+    /*Mes keyframes :
 
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
+    base 100%
+    il y a 3 items  donc  100/3
+    il y a donc 33.33% par item
+    1.5% d'arrivée, 30.33% visible immobile ,1.5% de départ
+
+    */
+    @keyframes animation-carte-1 {
+        0% { opacity: 0; transform: translateX(656px); }
+        1.5% { opacity: 1; transform: translateX(280px); }
+        31.5% { opacity: 1; transform: translateX(280px); }
+        33% { opacity: 0; transform: translateX(-100%); }
+        100% { opacity: 0; transform: translateX(656px); }
     }
+    @keyframes animation-carte-2 {
+        0% { opacity: 0; transform: translateX(220px); }
+        33% { opacity: 0; transform: translateX(220px); }
+        34.5% { opacity: 1; transform: translateX(0px); }
+        64.5% { opacity: 1; transform: translateX(0px); }
+        66% { opacity: 0; transform: translateX(-100%); }
+        100% { opacity: 0; transform: translateX(220px); }
 
-    /* Fading animation */
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        height: 30rem;
     }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
+    @keyframes animation-carte-3 {
+        0% { opacity: 0; transform: translateX(0px); }
+        66% { opacity: 0; transform: translateX(0px); }
+        67.5% { opacity: 1; transform: translateX(-280px); }
+        97.5% { opacity: 1; transform: translateX(-280px); }
+        99% { opacity: 0; transform: translateX(-600px); }
+        100% { opacity: 0; transform: translateX(-600px); }
     }
 
     #descriptions2 {
@@ -225,18 +240,31 @@
         bottom: 0;
     }
 
+    #conteneurvideo > img {
+        border-radius: 0;
+    }
+
+    #conteneurvideo > img {
+        border-radius: 0;
+    }
+
 
 /* Section Commande */
     #commande{
-        height: 100%;
-        background: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        padding: 5%;
+        background:none;
+        height: auto;
+    }
+    #commande a {
+        width: auto;
     }
     #commande h3, #commande h2{
         text-align: center;
 
+    }
+    #commande h2{
+        font-size: 40px;
     }
    #commande h3{
        padding-top: 80px;
@@ -258,10 +286,8 @@
     /* Section Contact */
 
     #contact {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        padding: 5%;
     }
     #contact h3{
         font-size: 14px;
@@ -288,9 +314,16 @@
     #imgform{
         display: none;
     }
-    #contactleft form{
-        padding: 0 50px;
+    #contactleft{
+        width: 100%;
     }
+    #nomgauche input, #prenomdroite input {
+        width: 100%;
+    }
+    #contactleft form {
+        width: 80%;
+    }
+
     #contactleft, #contactez-nous {
         height: auto;
     }
@@ -299,22 +332,26 @@
     }
 
 
-    .nomprenom{
+
+    #nomgauche,#prenomdroite {
+        margin-bottom: 20px;
+
+    }
+
+    .nomprenom {
+        max-width: 100%;
+        margin: auto;
+
         display: block;
     }
-
-    #nomgauche {
-        margin-bottom: 20px;
-    }
-
-    #contactleft input{
-        width: 412px;
-    }
-
     #submit {
         margin-top: 30px;
         margin-bottom: 50px;
     }
+
+
+
+
     /* footer */
 
     body > footer > p
@@ -397,31 +434,151 @@
 
 
 
-
-
-
-    /*footer #foot4{*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    width: 20%;*/
-    /*    margin-top: -20px;*/
-    /*}*/
-
-    /*footer #foot4 img:first-child{*/
-    /*    margin-right: 10px;*/
-    /*}*/
-
-    /*footer #foot4 img{*/
-    /*    height: 60px;*/
-    /*    padding-bottom: 10px;*/
-    /*}*/
-
 }
 
 
 /* tablet */
 @media all and (min-width: 657px) and (max-width: 1024px) {
+
+
+    /* Header */
+    header {
+        width: 100%;
+        height: 73px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    header nav ul li:last-child {
+        display: flex;
+        width: 170px;
+        margin-left: 10%;
+    }
+
+    header .logo {
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    #burger {
+        display: flex;
+        width: 12%;
+        margin-left: 5%;
+    }
+    /* background filet */
+    #newcards {
+        background-image: none;
+    }
+
+    #voyage h1 {
+        font-size: 70px;
+    }
+    /* Contact */
+    #contact {
+        display: block;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10px;
+    }
+
+    #contact h3 {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    #contact h2 {
+        font-size: 36px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #contact h2 span {
+        display: none;
+    }
+
+    #contact h5 {
+        display: flex;
+        text-align: center;
+    }
+
+    #contactez-nous {
+        box-shadow: none;
+    }
+
+    #imgform {
+        display: none;
+    }
+
+    #contactleft {
+        width: 100%;
+    }
+
+    #nomgauche input, #prenomdroite input {
+        width: 100%;
+    }
+
+    #contactleft form {
+        width: 80%;
+    }
+
+    #contactleft, #contactez-nous {
+        height: auto;
+    }
+
+    #contactleft h4, #contactleft p {
+        display: none;
+    }
+
+
+    #nomgauche, #prenomdroite {
+        margin-bottom: 20px;
+
+    }
+
+    .nomprenom {
+        max-width: 100%;
+        margin: auto;
+
+        display: block;
+    }
+
+    #submit {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* pc */
