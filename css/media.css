@@ -97,8 +97,14 @@
     }
 
     #descriptions {
+        position: relative;
         flex-wrap: nowrap;
         gap: 0;
+        height: 400px;
+    }
+
+    #descriptions .cards{
+        position: absolute;
     }
     /* ANIMATIONS CARDS NOUVEAU
 
@@ -109,7 +115,7 @@
     -animation-iteration-count   infinite
     -animation-direction    normal
     -animation-fill-mode    none
-    -animation-play-state  runing
+    -animation-play-state  running
 
     100%  3 items   100/3  33% par item
     1.5% d'arrivée, 30% visible immobile ,1.5% de départ
@@ -139,28 +145,28 @@
 
     */
     @keyframes animation-carte-1 {
-        0% { opacity: 0; transform: translateX(656px); }
-        1.5% { opacity: 1; transform: translateX(280px); }
-        31.5% { opacity: 1; transform: translateX(280px); }
+        0% { opacity: 0; transform: translateX(100%); }
+        1.5% { opacity: 1; transform: translateX(0); }
+        31.5% { opacity: 1; transform: translateX(0); }
         33% { opacity: 0; transform: translateX(-100%); }
-        100% { opacity: 0; transform: translateX(656px); }
+        100% { opacity: 0; transform: translateX(-100%); }
     }
     @keyframes animation-carte-2 {
-        0% { opacity: 0; transform: translateX(220px); }
-        33% { opacity: 0; transform: translateX(220px); }
-        34.5% { opacity: 1; transform: translateX(0px); }
-        64.5% { opacity: 1; transform: translateX(0px); }
+        0% { opacity: 0; transform: translateX(100%); }
+        33% { opacity: 0; transform: translateX(100%); }
+        34.5% { opacity: 1; transform: translateX(0); }
+        64.5% { opacity: 1; transform: translateX(0); }
         66% { opacity: 0; transform: translateX(-100%); }
-        100% { opacity: 0; transform: translateX(220px); }
+        100% { opacity: 0; transform: translateX(-100%); }
 
     }
     @keyframes animation-carte-3 {
-        0% { opacity: 0; transform: translateX(0px); }
-        66% { opacity: 0; transform: translateX(0px); }
-        67.5% { opacity: 1; transform: translateX(-280px); }
-        97.5% { opacity: 1; transform: translateX(-280px); }
-        99% { opacity: 0; transform: translateX(-600px); }
-        100% { opacity: 0; transform: translateX(-600px); }
+        0% { opacity: 0; transform: translateX(100%); }
+        66% { opacity: 0; transform: translateX(100%); }
+        67.5% { opacity: 1; transform: translateX(0); }
+        97.5% { opacity: 1; transform: translateX(0); }
+        99% { opacity: 0; transform: translateX(-100%); }
+        100% { opacity: 0; transform: translateX(-100%); }
     }
 
     #descriptions2 {
@@ -304,10 +310,8 @@
         display: none;
     }
     #contact h5{
-        display: flex;
-        text-align: center;
+        display: none;
     }
-
     #contactez-nous {
         box-shadow: none;
     }
@@ -550,6 +554,10 @@
     #submit {
         margin-top: 30px;
         margin-bottom: 50px;
+    }
+
+    #contact h5{
+        display: none;
     }
 
 
